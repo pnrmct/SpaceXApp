@@ -13,6 +13,8 @@
 		49177E7D28EDB53700BDCED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49177E7B28EDB53700BDCED6 /* Main.storyboard */; };
 		49177E7F28EDB53800BDCED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49177E7E28EDB53800BDCED6 /* Assets.xcassets */; };
 		49177E8228EDB53800BDCED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49177E8028EDB53800BDCED6 /* LaunchScreen.storyboard */; };
+		4918F3A928EDE557004C254A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4918F3A828EDE557004C254A /* Model.swift */; };
+		4918F3AC28EDF770004C254A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4918F3AB28EDF770004C254A /* Kingfisher */; };
 		493C8E5C28EDC2EA00B5421A /* RocketListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C8E5B28EDC2EA00B5421A /* RocketListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,7 @@
 		49177E7E28EDB53800BDCED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49177E8128EDB53800BDCED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49177E8328EDB53800BDCED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4918F3A828EDE557004C254A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		493C8E5B28EDC2EA00B5421A /* RocketListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4918F3AC28EDF770004C254A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +78,7 @@
 		4918F3A528EDCBA0004C254A /* SpaceXModel */ = {
 			isa = PBXGroup;
 			children = (
+				4918F3A828EDE557004C254A /* Model.swift */,
 			);
 			path = SpaceXModel;
 			sourceTree = "<group>";
@@ -102,6 +107,9 @@
 			dependencies = (
 			);
 			name = SpaceXApp;
+			packageProductDependencies = (
+				4918F3AB28EDF770004C254A /* Kingfisher */,
+			);
 			productName = SpaceXApp;
 			productReference = 49177E7228EDB53700BDCED6 /* SpaceXApp.app */;
 			productType = "com.apple.product-type.application";
@@ -130,6 +138,9 @@
 				Base,
 			);
 			mainGroup = 49177E6928EDB53700BDCED6;
+			packageReferences = (
+				4918F3AA28EDF770004C254A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 49177E7328EDB53700BDCED6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4918F3A928EDE557004C254A /* Model.swift in Sources */,
 				493C8E5C28EDC2EA00B5421A /* RocketListCollectionViewCell.swift in Sources */,
 				49177E7A28EDB53700BDCED6 /* ViewController.swift in Sources */,
 				49177E7628EDB53700BDCED6 /* AppDelegate.swift in Sources */,
@@ -378,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4918F3AA28EDF770004C254A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4918F3AB28EDF770004C254A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4918F3AA28EDF770004C254A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 49177E6A28EDB53700BDCED6 /* Project object */;
 }

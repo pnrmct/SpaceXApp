@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RocketListCollectionViewCell: UICollectionViewCell {
     
@@ -18,5 +19,12 @@ class RocketListCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    ///
+    func configuration(result:SpaceXElement) {
+        rocketImage.kf.setImage(with: URL(string: result.links?.patch?.small ?? ""))
+        nameLabel.text = result.name
+        rocketNameLabel.text = result.rocket
+        yearLabel.text = result.id
+        
+    }
+   
 }
